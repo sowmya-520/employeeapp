@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
 
+import Employees from './Employees';
 function App() {
+  const employees=[
+    {id:"e1",name:"shvswm",experience:9,date:new Date(2023,6,9)},
+    {id:"e2",name:"sowmya",experience:8,date:new Date(2022,1,14)},
+    {id:"e3",name:"supriya",experience:4,date:new Date(2017,2,29)},
+    {id:"e4",name:"ankitha",experience:3,date:new Date(2020,9,6)}
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div>
+    <h1>employees Data</h1>
+    <Employees items={employees}/>
     </div>
   );
 }
